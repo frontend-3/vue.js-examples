@@ -1,10 +1,10 @@
 import Vue from 'vue'
 /* eslint-disable no-new */
 
-/* NOTE: Just comment and discoment if you want to run any specific example */
+/* NOTE: Just comment and uncomment if you want to run any specific example */
 
 /* [EXAMPLE 1] Declarative render */
-new Vue({
+window.app = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue.js!'
@@ -13,9 +13,9 @@ new Vue({
 
 /* [EXAMPLE 2] Using directives */
 new Vue({
-  el: '#app',
+  el: '#app2',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'You loaded this page on ' + new Date()
   }
 })
 
