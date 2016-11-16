@@ -4,7 +4,7 @@ import Vue from 'vue'
 /* NOTE: Just comment and uncomment if you want to run any specific example */
 
 /* [EXAMPLE 1] Declarative render */
-window.app = new Vue({
+new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue.js!'
@@ -16,6 +16,26 @@ new Vue({
   el: '#app2',
   data: {
     message: 'You loaded this page on ' + new Date()
+  }
+})
+
+/* [EXAMPLE 3] Using conditionals directives */
+new Vue({
+  el: '#app3',
+  data: {
+    seen: true
+  }
+})
+
+/* [EXAMPLE 4] Using loop directives */
+new Vue({
+  el: '#app4',
+  data: {
+    todos: [
+      'Learn javascript',
+      'Learn Vue',
+      'Build something awesome'
+    ]
   }
 })
 

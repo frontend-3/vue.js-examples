@@ -6,11 +6,21 @@
     <title>vue.js-examples</title>
   </head>
   <body>
-    <div id="app">{{message}}</div>
+    <div id="app">{{ message }}</div>
     <div id="app2">
       <span  v-bind:title="message">
         Hover your mouse over me for a few seconds to see my dynamically bound title!
       </span>
+    </div>
+    <div id="app3">
+      <p v-if="seen">Now you can see me</p>
+    </div>
+    <div id="app4">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo }}
+        </li>
+      </ol>
     </div>
   </body>
 </html>
