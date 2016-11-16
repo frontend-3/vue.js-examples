@@ -39,6 +39,19 @@ new Vue({
   }
 })
 
+/* [EXAMPLE 5] Using on directive */
+new Vue({
+  el: '#app5',
+  data: {
+    message: 'Able'
+  },
+  methods: {
+    reverseMessage () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+
 /* [EXAMPLE] Components */
 // new Vue({
 //   el: '#app',
