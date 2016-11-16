@@ -13,7 +13,7 @@ new Vue({
 
 /* [EXAMPLE 2] Using directives */
 new Vue({
-  el: '#app2',
+  el: '#app-2',
   data: {
     message: 'You loaded this page on ' + new Date()
   }
@@ -21,7 +21,7 @@ new Vue({
 
 /* [EXAMPLE 3] Using conditionals directives */
 new Vue({
-  el: '#app3',
+  el: '#app-3',
   data: {
     seen: true
   }
@@ -29,7 +29,7 @@ new Vue({
 
 /* [EXAMPLE 4] Using loop directives */
 new Vue({
-  el: '#app4',
+  el: '#app-4',
   data: {
     todos: [
       'Learn javascript',
@@ -41,7 +41,7 @@ new Vue({
 
 /* [EXAMPLE 5] Using on directive */
 new Vue({
-  el: '#app5',
+  el: '#app-5',
   data: {
     message: 'Able'
   },
@@ -52,9 +52,27 @@ new Vue({
   }
 })
 
-/* [EXAMPLE] Components */
-// new Vue({
-//   el: '#app',
-//   template: '<App/>',
-//   components: { App }
-// })
+/* [EXAMPLE 6] Using on events */
+new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hello Able'
+  }
+})
+
+/* [EXAMPLE 7] Components */
+Vue.component('todo-item', {
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
+})
+
+new Vue({
+  el: '#app-7',
+  data: {
+    groceryList: [
+      { text: 'Vegetables' },
+      { text: 'Cheese' },
+      { text: 'Whatever else humans are supposed to eat' }
+    ]
+  }
+})
